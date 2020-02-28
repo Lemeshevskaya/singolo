@@ -1,6 +1,19 @@
 @font-face {
-  font-family: "Lato";
+  font-family: "Lato-Light";
   src: url("assets/fonts/Lato-Light.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lato-Black";
+  src: url("assets/fonts/Lato-Black.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("assets/fonts/Lato-Regular.ttf") format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -12,6 +25,7 @@ body {
 a {
   text-decoration: none;
 }
+
 .header__logo {
   flex-basis: 50%;
 
@@ -20,7 +34,7 @@ a {
 
 }
 .logo__text_decor {
-  font-family: "Lato", Verdana, sans-serif;
+  font-family: "Lato-Light", Verdana, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -56,7 +70,7 @@ a {
 
 
 .navigation__link {
-  font-family: "Lato", Verdana, sans-serif;
+  font-family: "Lato-Light", Verdana, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -114,7 +128,7 @@ a {
   width: 50px;
   height: 50px;
   display: flex;
-  background: url("assets/img/chev.png") no-repeat center center;
+  background: url("assets/img/header/chev.png") no-repeat center center;
 }
 .slider__control-prev {
   left: 24px;
@@ -169,4 +183,85 @@ a {
 .slider__img-shadow_goriz {
   transform: scale(-1,1) rotate(90deg);
 
+}
+.services__wrapper {
+  height: 500px;
+  padding: 0 41px 0;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  color: #666d89;
+
+}
+.service__items {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 44px;
+  justify-content: space-between;
+
+}
+.service__article {
+  flex-basis: 300px;
+  height: 123px;
+  overflow: hidden;
+
+}
+
+.service__article:before {
+  content: "";
+  float: left;
+  margin-top: 1px;
+  margin-right: 15px;
+  background: url("assets/img/services/icon.png") no-repeat;
+  height: 100%;
+  width: 65px;
+
+}
+.service__items article h3 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: "Lato-Black", Verdana, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+}
+.service__items article p {
+  font-family: "Lato-Regular", Verdana, sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  margin: 0;
+  line-height: 21px;
+  text-align: justify;
+}
+.service__header {
+  margin: 0;
+  font-family: "Lato-Black", Verdana, sans-serif;
+  font-style: normal;
+  font-size: 30px;
+  padding-top: 59px;
+}
+.service__text {
+  font-family: "Lato-Light", Verdana, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.7em;
+  word-spacing: 1px;
+  margin: 0;
+  padding-top: 20px;
+}
+.pen:before {
+  background-position: 0 0;
+}
+.bulb:before {
+  background-position: -73px 0;
+}
+.heart:before {
+  background-position: -145px 0;
+}
+.phone:before {
+  background-position: -218px 0;
+}
+.bubble:before {
+  background-position: -292px 0;
+}
+.star:before {
+  background-position: -365px 0;
 }
