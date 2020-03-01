@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "Lato-Light";
+  src: url("assets/fonts/Lato-Light.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato-Black";
+  src: url("assets/fonts/Lato-Black.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("assets/fonts/Lato-Regular.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1020px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*portfolio*/
+.portfolio__wrapper {
+  padding: 0 41px 59px;
+  background-color: #2d303a;
+  border-bottom: 6px solid #323746;
+  box-sizing: border-box;
+  color: #666d89;
+}
+
+.portfolio__header {
+  margin: 0;
+  font-family: "Lato-Black", Verdana, sans-serif;
+  font-style: normal;
+  font-size: 30px;
+  padding-top: 61px;
+}
+
+.portfolio__text {
+  font-family: "Lato-Light", Verdana, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.7em;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.portfolio__gallery {
+  max-height: 660px;
+  overflow: hidden;
+}
+
+.gallery__filter {
+  margin: 11px 0 19px;
+  padding: 0;
+  display: flex;
+  justify-content: left;
+  list-style-type: none;
+}
+
+.gallery__filter button {
+  margin-right: 11px;
+  padding: 3px 6px;
+  font-family: "Lato-Regular",Verdana,sans-serif;
+  font-size: 12px;
+  background: transparent;
+  text-align: center;
+  border:1px solid #666d89;
+  border-radius: 5px;
+  color: inherit;
+  cursor: pointer;
+}
+
+.portfolio__images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  margin-bottom: 16px;
+}
+
+.portfolio__images a {
+  margin-bottom: 16px;
+}
