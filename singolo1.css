@@ -308,8 +308,11 @@ a {
   50% {
     opacity: 1; } }
 
-@media screen and (max-width: 930px) {
+@media (max-width: 930px) {
   .slider__item {
     flex: 0 0 100%;
+  }
+  .slider__item2 {
+    display: none;
   }
 }

@@ -1,0 +1,204 @@
+@font-face {
+    font-family: "Lato-Light";
+    src: url("assets/fonts/Lato-Light.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Lato-Black";
+    src: url("assets/fonts/Lato-Black.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Lato-Regular";
+    src: url("assets/fonts/Lato-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+    html,
+    body {
+	height: 100%;
+    }
+  
+  body {
+    margin: 0 auto;
+    max-width: 1020px;
+    display: flex;
+	flex-direction: column;
+  }
+  .content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+  
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .section-header {
+    margin: 0;
+    font-family: "Lato-Black", Verdana, sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    padding-top: 61px;
+  }
+  
+  .section-text {
+    font-family: "Lato-Light", Verdana, sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.7em;
+    margin: 0;
+    padding-top: 20px;
+  }
+  
+  .module-header {
+    margin: 0 0 10px 0;
+    font-family: "Lato-Black", Verdana, sans-serif;
+    font-style: normal;
+    font-size: 18px;
+  }
+  
+  .module-text {
+    margin: 0;
+    font-family: "Lato-Regular", Verdana, sans-serif;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 21px;
+    text-align: justify;
+  }
+
+  /*get-a-quote*/
+  .get-a-quote {
+    padding: 0 41px 51px;
+    background-color: #f06c64;
+    border-bottom: 6px solid #ea676b;
+    box-sizing: border-box;
+    color: #f0d8d9;
+  }
+
+  .contact {
+    margin-top: 42px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .contact__form {
+    flex: 0 0 66%;
+  }
+  
+  .form-item {
+    width: 100%;
+    height: 38px;
+    margin-bottom: 16px;
+    padding-left: 13px;
+    display: block;
+    background-color: #d6564f;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+.form-item:hover,
+.form-item:focus,
+.form-item:active {
+    outline: 0;
+}
+
+
+.form-item::-webkit-input-placeholder {
+    color: #ee8284;
+}
+
+.form-item:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.form textarea {
+    height: 202px;
+    padding-top: 11px;
+    resize: none;
+}
+
+  .contact__contact-inf {
+    flex: 0 0 32%;
+  }
+
+  .contact__items {
+    margin-top: 22px;
+  }
+
+  .contact__item {
+    padding-left: 24px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: #f0d8d9;
+  }
+
+  .contact__item::before {
+    content: " ";
+    left: 0;
+    width: 13px;
+    height: 100%;
+    position: absolute;
+    background: url("assets/img/get-a-quote/contact.png") no-repeat center;
+  }
+
+  .contact__item_location::before {
+      background-position: 0 5px;
+  }
+
+  .contact__item_mail::before {
+    background-position: 0 -37px;
+}
+
+/*footer*/
+
+.footer__wrapper {
+    display: flex;
+    background-color: #2d303a;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.social {
+    display: flex;
+  }
+
+.social__icon {
+    background: url("assets/img/about-us/social-icon.png") no-repeat;
+    height: 40px;
+    width: 40px;
+  }
+  .social__icon:hover {
+    filter: brightness(0.5);
+  }
+  
+  .icon-facebook {
+    background-position: 0 0;
+  }
+  
+  .icon-google {
+    background-position: -39px 0;
+  }
+  
+  .icon-twitter {
+    background-position: -79px 0;
+  }
+  
+  .icon-linkedin {
+    background-position: -119px 0;
+  }
+  
