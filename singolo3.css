@@ -123,6 +123,9 @@
     transition: opacity 0.5s ease;
 }
 
+.form-item:invalid:not(:placeholder-shown) {border: 1px solid #f0353c}
+.form-item:valid:not(:placeholder-shown) {border: 1px solid #f0d8d9}
+
 .form textarea {
     height: 202px;
     padding-top: 11px;
@@ -170,7 +173,6 @@
     color: #f0d8d9;
     border: 1px solid #f0d8d9;
 }
-
 
 /*footer*/
 
