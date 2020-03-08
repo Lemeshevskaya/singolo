@@ -162,6 +162,16 @@
     background-position: 0 -37px;
 }
 
+.form__button {
+    padding: 0;
+    text-transform: uppercase;
+    text-align: center;
+    box-sizing: border-box;
+    color: #f0d8d9;
+    border: 1px solid #f0d8d9;
+}
+
+
 /*footer*/
 
 .footer__wrapper {
