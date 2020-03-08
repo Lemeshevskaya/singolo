@@ -440,6 +440,8 @@ a {
 .social {
     display: flex;
     margin: 23px 0;
+    list-style-type: none;
+    padding: 0;
 }
 
 .social__icon {
