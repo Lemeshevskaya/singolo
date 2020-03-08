@@ -29,6 +29,38 @@ a {
   cursor: pointer;
 }
 
+.section-header {
+  margin: 0;
+  font-family: "Lato-Black", Verdana, sans-serif;
+  font-style: normal;
+  font-size: 30px;
+  padding-top: 61px;
+}
+
+.section-text {
+  font-family: "Lato-Light", Verdana, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.7em;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.module-header {
+  margin: 0 0 10px 0;
+  font-family: "Lato-Black", Verdana, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.module-text {
+  margin: 0;
+  font-family: "Lato-Regular", Verdana, sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 21px;
+  text-align: justify;
+}
 
 /*portfolio*/
 .portfolio__wrapper {
@@ -133,12 +165,16 @@ a {
 }
 
 .social__icon {
-  background: url("assets/img/about-us/social-icon.png") no-repeat;
-  height: 40px;
-  width: 40px;
+  background: url("assets/img/about-us/social-icon.png") no-repeat center;
+  height: 33px;
+  width: 33px;
 }
 .social__icon:hover {
   filter: brightness(0.5);
+}
+
+.social__icon:not(:first-child) {
+  margin-left: 7px;
 }
 
 .icon-facebook {
